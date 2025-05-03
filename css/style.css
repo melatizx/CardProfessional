@@ -62,7 +62,39 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.contatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+.contatos p{
+    margin: 3px;
+    color: gray;
+}.contatos a:link{
+    color: gray;
+}
+.contatos a:visited{
+    color: gray;
+}
 
+.arquivos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.linguagens_section{
+    display: flex;
+    flex-direction: row;
+}
+.linguagens{
+    margin-left: 35px;
+    margin-right: 35px;
+}
 /* Rodape */
 .controle-rodape{
     display: flex;
@@ -106,6 +138,7 @@ footer p{
     margin-right: 15px;
     width: 20px;
     height: 20px;
+    color: white;
 }
 .creditos_section{
     display: flex; 
@@ -121,8 +154,11 @@ footer p{
 /* -- */
 
 /* Hover */
-
 .acessar_section:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+.linguagens:hover{
     transform: scale(1.1);
     transition-duration: 0.3s;
 }

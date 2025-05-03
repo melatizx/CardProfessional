@@ -38,7 +38,22 @@
                 <section class="titulo">
                     <h2>Abaixo, mostrarei alguns de meus trabalhos:</h2>
                 </section>
+                <section class="arquivos">
+                    <h3 style="font-size: 20px; margin-bottom: 50px;">Arquivos</h3>
+                    <section class="linguagens_section">
+                        <section class="linguagens">
+                            <a href="https://melatizx.github.io/js" target="_blank"><img src="img/javascript.svg"></a>
+                        </section>
+                        <section class="linguagens">
+                            <a href="https://github.com/melatizx/exerc.python" target="_blank"><img src="img/python.svg"></a>
+                        </section>
+                    </section>
+                </section>
             </section>
+        </section>
+        <section class="contatos">
+            <p>Contatos: </p>
+            <p><u> <a>&nbspleonardomelati1@gmail.com</a> | <a href="https://wa.me/5515997620740" target="_blank">55+ 15 99762-0740&nbsp</a> </u></p>
         </section>
         <section class="controle-rodape">
             <footer class="rodape">
@@ -46,9 +61,9 @@
                 <br>
                 <nav>
                     <section class="redes">
-                        <a href="https://github.com/melatizx" target="_blank"><img src="img/github.svg"></a>
-                        <a href="https://instagram.com/melatizx" target="_blank"><img  src="img/instagram.png"></a>
-                        <a href="https://br.linkedin.com/in/leonardo-melati-566884318?trk=people-guest_people_search-card" target="_blank"><img src="img/linkedin.png"></a>
+                        <a href="https://github.com/melatizx" target="_blank"><img src="img/github.svg" onmouseenter="trocar(this, 'img/github_gray.svg')" onmouseleave="trocar(this, 'img/github.svg')"></a>
+                        <a href="https://instagram.com/melatizx" target="_blank"><img  src="img/instagram.svg" onmouseenter="trocar(this, 'img/instagram_gray.svg')" onmouseleave="trocar(this, 'img/instagram.svg')"></a>
+                        <a href="https://br.linkedin.com/in/leonardo-melati-566884318?trk=people-guest_people_search-card" target="_blank"><img src="img/linkedin.svg" onmouseenter="trocar(this, 'img/linkedin_gray.svg')" onmouseleave="trocar(this, 'img/linkedin.svg')"></a>
                     </section>
                 </nav>
             </footer>
@@ -57,5 +72,10 @@
                 <p class="creditos">HTML, CSS e JS foram utilizados para o desenvolvimento</p>
             </section>
         </section>
+        <script>
+            function trocar(imagemElement, novaImagem){
+                imagemElement.src = novaImagem 
+            }
+        </script>
     </body>
 </html>
