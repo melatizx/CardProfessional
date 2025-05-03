@@ -1,0 +1,128 @@
+@font-face {
+    font-family: montserrat;
+    src: url(Montserrat-Regular.ttf);
+}
+
+html{
+    font-family: montserrat;
+}
+
+.menu{
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 7%;
+    flex-direction: row;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.acessar_section{
+    margin-left: 16px;
+    margin-right: 16px;
+}.acessar{
+    font-size: 16px;
+}.acessar:link{
+    color: white;
+}.acessar:visited{
+    color: white;
+}
+
+body{
+    margin: 0px;
+}
+
+.titulo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobremim{
+    width: 70%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Rodape */
+.controle-rodape{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer{
+    background-color: black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+}
+
+footer p{
+    background-color: black;
+}
+
+.controle-rodape footer nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    height: 30px;
+    background-color: black;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+}
+
+.redes a{
+    width: 60px;
+}
+
+.redes img{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+.creditos_section{
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.creditos{
+    color: gray;
+    margin: 0;
+}
+/* -- */
+
+/* Hover */
+
+.acessar_section:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
