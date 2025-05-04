@@ -17,6 +17,8 @@ html{
     text-align: center;
     height: 7%;
     flex-direction: row;
+    position: fixed;
+
 }
 .cabecalho{
     display: flex;
@@ -27,8 +29,8 @@ html{
 }
 
 .acessar_section{
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 7%;
+    margin-right: 7%;
 }.acessar{
     font-size: 16px;
 }.acessar:link{
@@ -95,6 +97,33 @@ body{
     margin-left: 35px;
     margin-right: 35px;
 }
+.trabalhos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.explicacao{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}.imgtrabalho{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    margin-left: 5%;
+    margin-right: 5%;
+}.imgtrabalho img{
+    width: 100%;
+    border: 3px solid gray;
+    border-radius: 20px;
+}.titulotrabalho{
+    width: 80%;
+    font-size: 110%;
+}
+
 /* Rodape */
 .controle-rodape{
     display: flex;
