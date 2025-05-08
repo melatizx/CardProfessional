@@ -124,6 +124,42 @@ body{
     width: 80%;
     font-size: 110%;
 }
+.trabalhos_abrir{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+.exibir{
+    border: 2px solid gray;
+}
+
+.exibir h2{
+    z-index: 1;
+}
+
+.exibir img{
+    /* display: none; */
+    z-index: 2;
+}
+.exibir:hover img{
+    display: block;
+
+}
+
+.exibir {
+    display: flex;
+}
+
+.exibir .escolher{
+    width: 100%;
+    background-color: black;
+    display: block;
+    float: left;
+    position: relative;
+    left: 0;
+}
+
+
 /* Rodape */
 .controle-rodape{
     display: flex;
@@ -191,7 +227,10 @@ footer p{
     transform: scale(1.1);
     transition-duration: 0.3s;
 }
-
+.exibir:hover{
+    background-color: rgba(0, 0, 0, .5);
+    transition: 0.3s;
+}
 
 /* Phone */
 @media screen and (min-width: 343px) and (max-width:767px){
