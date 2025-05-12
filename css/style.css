@@ -18,7 +18,7 @@ html{
     height: 7%;
     flex-direction: row;
     position: fixed;
-
+    z-index: 100;
 }
 .cabecalho{
     display: flex;
@@ -116,6 +116,8 @@ body{
     text-align: right;
     margin-left: 5%;
     margin-right: 5%;
+    flex-direction: column;
+    z-index: 1;
 }.imgtrabalho img{
     width: 100%;
     border: 3px solid gray;
@@ -124,6 +126,23 @@ body{
     width: 80%;
     font-size: 110%;
 }
+.escurecer{
+    z-index: 1;
+    position: relative;
+}
+.opcoes{
+    z-index: 2;
+    position: absolute;
+    flex-direction: row;
+    display: flex;
+    width: 40%;
+}.opcoes img{
+    border: 0;
+    border-radius: 0;
+    margin: 10%;
+    width: 40%;
+}
+
 /* Rodape */
 .controle-rodape{
     display: flex;
@@ -190,6 +209,10 @@ footer p{
 .linguagens:hover{
     transform: scale(1.1);
     transition-duration: 0.3s;
+}
+.imgtrabalho:hover{
+    filter: brightness(50%);
+    transition: all 0.3s ease;
 }
 
 
