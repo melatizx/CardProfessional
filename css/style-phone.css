@@ -1,6 +1,5 @@
 header{
     background-color: black;
-    height: 35px;
 }
 
 .logo{
@@ -13,11 +12,19 @@ header{
     flex-direction: column;
     background-color: black;
     position: absolute;
-    top: 40px;
+    top: 35px;
     right: 0;
-    width: 200px;
+    width: 100%;
     padding: 10px;
-    
+    color: white;
+    z-index: 2;
+}
+.links li{
+    gap: 30px;
+}
+.links ul{
+    display: flex;
+    flex-direction: column;
 }
 .links.active{
     display: flex;
@@ -25,4 +32,7 @@ header{
 .menu-icon{
     display: block;
     margin-right: 10px;
+}
+.bio{
+    top: 35px;
 }

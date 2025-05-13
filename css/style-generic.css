@@ -19,8 +19,19 @@ header{
     background-color: black;
     color: white;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 35px;
 }
 .links{
     color: white;
 }
-
+.links a:link{
+    color: white;
+}
+.links a:visited{
+    color: white;
+}
+.bio{
+    color: black;
+}
