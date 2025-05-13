@@ -1,0 +1,28 @@
+header{
+    background-color: black;
+    height: 35px;
+}
+
+.logo{
+    width: 100%;
+    margin-left: 10px;
+}
+
+.links{
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    
+}
+.links.active{
+    display: flex;
+}
+.menu-icon{
+    display: block;
+    margin-right: 10px;
+}
