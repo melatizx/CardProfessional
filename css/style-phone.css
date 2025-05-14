@@ -5,6 +5,7 @@ header{
 .logo{
     width: 100%;
     margin-left: 10px;
+    font-size: 2.5vh;
 }
 
 .links{
@@ -18,21 +19,52 @@ header{
     padding: 10px;
     color: white;
     z-index: 2;
+    transition: height 0.4s;
+    transition-timing-function: ease-out;
 }
 .links li{
-    gap: 30px;
+    margin-top: 13px;
+    font-size: 2.5vh;
 }
 .links ul{
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 .links.active{
     display: flex;
+    height: 27vh;
 }
 .menu-icon{
     display: block;
     margin-right: 10px;
 }
+.menu-icon:target{
+    transform: rotate(180deg);
+}
 .bio{
-    top: 35px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.titulo{
+    font-size: 3.3vh;
+}
+
+#backfront{
+    font-size: 2.3vh;
+}
+
+#linguagens{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 2.3vh;
+    list-style: inside;
+}
+.subtitulo{
+    font-size: 2.4vh;
+    margin-bottom: 10px;
 }
