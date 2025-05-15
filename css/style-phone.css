@@ -9,31 +9,27 @@ header{
 }
 
 .links{
-    display: none;
+    display: flex;
     flex-direction: column;
     background-color: black;
     position: absolute;
     top: 35px;
     right: 0;
     width: 100%;
-    padding: 10px;
+    padding: 0 10px;
     color: white;
     z-index: 2;
-    transition: height 0.4s;
-    transition-timing-function: ease-out;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease, padding 0.3s ease;
 }
 .links li{
     margin-top: 13px;
     font-size: 2.5vh;
 }
-.links ul{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 .links.active{
-    display: flex;
-    height: 27vh;
+    max-height: 27vh;
+    padding: 10px;
 }
 .menu-icon{
     display: block;
@@ -67,4 +63,57 @@ header{
 .subtitulo{
     font-size: 2.4vh;
     margin-bottom: 10px;
+}
+
+.animation{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+#MLT-animation{
+    color: white;
+    font-size: 8vh;
+}
+.animation div {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes example {
+    0%   {left: 1%; transform: rotate(0deg);}
+    25%  {left: 64%; transform: rotate(180deg);}
+    50%  {left: 1%; transform: rotate(360deg);}
+    75%  {left: 64%; transform: rotate(180deg);}
+    100% {left: 1%; transform: rotate(0deg);}
+}
+
+.index-explicacao{
+    font-size: 2.6vh;
+    margin-bottom: 20px;
+}
+
+.rodape p{
+    color: lightgrey;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.section-redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    margin-top: 20px;
+}
+.redes{
+    margin: 7px;
 }
