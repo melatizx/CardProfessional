@@ -83,12 +83,12 @@ header{
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    animation-name: example;
+    animation-name: mlt;
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
   
-@keyframes example {
+@keyframes mlt {
     0%   {left: 1%; transform: rotate(0deg);}
     25%  {left: 64%; transform: rotate(180deg);}
     50%  {left: 1%; transform: rotate(360deg);}
@@ -99,6 +99,7 @@ header{
 .index-explicacao{
     font-size: 2.6vh;
     margin-bottom: 20px;
+    white-space: normal;
 }
 
 .rodape p{
@@ -116,4 +117,25 @@ header{
 }
 .redes{
     margin: 7px;
+}
+
+.animation-explicacao{
+    display: block;
+    width: 100%;
+ 
+}
+.animation-explicacao p{  
+    width: 100%;
+    display: block;    
+    animation-name: entrando;
+    animation-duration: 3s;
+    overflow: hidden;
+    animation-fill-mode: forwards;
+    min-width: 100%;
+    transform-origin: left;
+}
+
+@keyframes entrando{
+    from {max-width: 0; display: none; opacity: 0;}
+    to   {max-width: 100%; display: block; opacity: 1;}
 }
